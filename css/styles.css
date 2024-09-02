@@ -22,8 +22,9 @@ a {
 }
 
 .container {
-  width: 1158px;
-  padding: 0 15px;
+  max-width: 320px;
+  /* padding: 0 15px; */
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -35,10 +36,7 @@ body {
   background-color: #fff;
 }
 
-/* .section{
-  padding-top: 120px;
-  padding-bottom: 120px;
-} */
+
 /* #endregion kk */
 
 /* #region header */
@@ -239,20 +237,25 @@ body {
 }
 
 .futures-sec {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .name-futures {}
 
 .futures-menu {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap: 72px;
   justify-content: center;
 }
 
 .futures-list {
-  flex-basis: calc((100% - 3 * 24px) / 4)
+  /* flex-basis: calc((100% - 3 * 24px) / 4); */
 }
 
 .icons {
@@ -270,21 +273,29 @@ body {
   height: 112px;
   background: #f4f4fd;
   margin-bottom: 8px;
+  display: none;
 }
 
-.icons-list {}
+.icons-list {
+  
+}
 
 .name-paragraph {
-  font-weight: 500;
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+  /* font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+   line-height: 1.2; */
   margin-bottom: 8px;
 }
 
 .main-info {
-  font-weight: 400;
+  font-weight: 500;
+  /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -293,15 +304,21 @@ body {
 
 /* #endregion main */
 
+
+
+
+
 /* #region main2 */
 .second-section {
   background: #f4f4fd;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
+ 
 }
 
 .visually-hidden {
@@ -323,9 +340,9 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  justify-content: center;
   text-transform: capitalize;
   color: #2e2f42;
-  /* padding-top: 124px;*/
   margin-bottom: 72px;
 }
 
@@ -335,7 +352,9 @@ body {
 
 .ul-photo {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap: 72px;
 
 }
 
@@ -360,8 +379,9 @@ body {
 }
 
 .team-work {
-  padding: 32px 0;
+  padding: 32px 16px;
   text-align: center;
+  
 }
 
 .glad-list {
@@ -411,12 +431,15 @@ body {
 
 /* #region main3 */
 .last-section {
-  max-width: 1158px;
+  /* max-width: 1158px; */
   margin-left: auto;
   margin-right: auto;
   height: auto;
-  padding-bottom: 120px;
-  padding-top: 120px;
+  /* padding-bottom: 120px;
+  padding-top: 120px; */
+  padding-bottom: 96px;
+  padding-top: 96px;
+  
 
 }
 
@@ -438,7 +461,8 @@ body {
 .portfolio-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  /* gap: 48px 24px; */
+  gap:48px;
 
 }
 
@@ -482,11 +506,14 @@ img {
 
 .portfolio-list {
 
-  max-width: 360px;
+  /* max-width: 360px; */ 
+  max-width: 288px;
   margin-right: auto;
   margin-left: auto;
-  gap: calc((100% - 72px) / 3);
+  /* width: calc((100% - 72px) / 3); */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+background: #fff;
 
 }
 
@@ -518,8 +545,10 @@ img {
 /* #region footer */
 .foot {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .foot-section {}
@@ -532,11 +561,16 @@ img {
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
+
+
 }
 
 .footer-logo {
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
   margin-bottom: 16px;
+  
 }
 
 .logo-studio {
@@ -563,6 +597,8 @@ img {
 
   text-align: center;
   gap: 16px;
+/*  */
+  justify-content: center;
 }
 
 .social-media {
@@ -572,15 +608,24 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+  
+  /*  */
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
 }
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  /*  */
+  flex-direction:column ;
 }
 
 .container-one {
-  margin-right: 120px;
+  /* margin-right: 120px; */
+ 
 }
 
 .container-two {}
@@ -598,9 +643,16 @@ transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 3 секция футера */
  .container-third {
-  margin-left: 80px;
+  
+  
+  /* margin-left: 80px; */
 }
 .footer-form-text {
+  /* добавтв */
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+/*  */
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 font-size: 16px;
@@ -610,7 +662,7 @@ color: #fff;
 margin-bottom: 16px;
 }
 .footer-form {
-  display: flex;
+  
   gap:24px;
   
 }
@@ -625,7 +677,9 @@ margin-bottom: 16px;
   padding-left: 16px;
 border: 1px solid #fff;
 border-radius: 4px;
-width: 264px;
+/* width: 264px; */
+width: 288px;
+    /*добавив */opacity: 0.3; 
 height: 40px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background-color: transparent;
@@ -645,7 +699,14 @@ padding-left: 16px;
   display: flex;
 align-items: center;
 justify-content: center;
-flex-direction: row;
+/* flex-direction: row; */
+margin-top: 16px;
+margin-right: 78px;
+margin-left: 77px;
+/*  */
+
+
+flex-direction: column;
 border-radius: 4px;
 padding: 8px 24px;
 min-width: 165px;
@@ -913,3 +974,148 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #404bbf;
 }
 /* #endregion footer */
+
+
+/* #region модалка планшет */
+
+  @media screen and (min-width: 768px) {
+   .container{
+    max-width: 768px;
+    padding: 0 16px;
+   }
+    
+   
+                   /* ----------СЕКЦИЯ СТРАТЕГИЯ----------- */
+   .futures-menu{
+    gap: 72px 24px ;
+    flex-wrap: wrap;
+
+    
+   }
+   
+   .futures-list{
+    flex-basis: calc((100% -  24px) / 2);
+   }
+                  /* ----------СЕКЦИЯ КОМАНДА----------- */
+
+.ul-photo{
+  gap: 64px 24px ;
+  padding-left: 92px;
+  padding-right: 92px;
+  
+} 
+.team-list{
+  width: calc((100% -  24px) / 2);
+}
+              /* ----------СЕКЦИЯ ПОРТФОЛИО----------- */
+
+.portfolio-menu{
+  gap: 72px 24px ;
+}
+.portfolio-list {
+  max-width: 356px;
+}
+.portfolio-list{
+  max-width: 360px;
+  width: calc((100% - 24px) / 2);
+}
+
+           /* ----------СЕКЦИЯ ФУТЕР----------- */
+
+ .footer-logo  {
+  display: inline-block;
+  
+ }
+ .glad-foot{
+  justify-content: flex-start;
+ }
+
+ .social-media{
+  justify-content: flex-start;
+ }
+ .container-two{
+    
+ }
+
+
+}
+
+/* #endregion footer */
+
+
+/* #region модалка комп */
+
+
+@media screen and (min-width: 1158px) {
+       .container{
+        max-width: 1158px;
+        padding: 0 15px;
+   }
+
+/* ----------СЕКЦИЯ СТРАТЕГИЯ----------- */
+.futures-sec {
+  padding-top: 120px;
+  padding-bottom: 120px;
+   }
+
+   .futures-menu{
+    gap: 24px;
+    flex-wrap: nowrap;
+   }
+
+   .futures-list{
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+  .icons{
+    display: block;
+  }
+
+  .name-paragraph{
+    font-weight: 500;
+  font-size: 20px;
+   line-height: 1.2;
+  }
+
+  .main-info{
+    font-weight: 400;
+  }
+
+/* ----------СЕКЦИЯ КОМАНДА----------- */
+.second-section{
+  max-width: 1440px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.ul-photo{
+  flex-wrap: nowrap;
+  gap: 24px;
+  padding: 0;
+}
+
+/* ----------СЕКЦИЯ ПОРТФОЛИО----------- */
+
+.last-section{
+  max-width: 1158px;
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+.portfolio-menu {
+  gap: 48px 24px;
+}
+.portfolio-list{
+  max-width: 360px;
+  width: calc((100% - 48px) / 3);
+}
+/* #endregion footer */
+
+}
+@media screen and (min-width:320px) and (max-width: 767px){
+  .container-nero{
+
+    max-width: 264px;
+       padding-left: 0;
+       padding-right: 0;
+        
+       
+      }
+}

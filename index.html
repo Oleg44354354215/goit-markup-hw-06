@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="nav">
           <a class="logo header-logo" href="./index.html"
@@ -49,8 +49,78 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-content">
+          <svg class="menu-open-svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu-button"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu">
+        <button type="button" class="menu-close-content">
+        <svg class="menu-close-svg" width="8" height="8">
+          <use href="./images/icons.svg#icon-vodopo"></use>
+        </svg>
+      </button>
+<!-- ---------------------------------------------------------------- -->
+      <nav class="mob-nav">
+        <ul class="mob-menu-modal">
+          <li class="mob-list">
+            <a class="mob-list-item" href="./index.html"><span class="mob-studio">Studio</span></a>
+          </li>
+          <li class="mob-list">
+            <a class="mob-list-item" href="">Portfolio</a>
+          </li>
+          <li class="mob-list">
+            <a class="mob-list-item" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+        <address class="mobil-menu-adress">
+          <ul class="mobile-contact-details-ul">
+            <li class="mobil-menu-adress-title">
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </address>
+        <ul class="glad-list">
+          <li class="listing-item">
+            <a href="" class="social-networks">
+              <svg class="c-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="listing-item">
+            <a href="" class="social-networks">
+              <svg class="c-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="listing-item">
+            <a href="" class="social-networks">
+              <svg class="c-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="listing-item">
+            <a href="" class="social-networks">
+              <svg class="c-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+  
+      
+    </div>
+    </header>
     <main>
       <!-- перша часть -->
       <section class="main-sec">
@@ -127,8 +197,8 @@
 
                 class="photo-team"
 
-                srcset="./images/Carry-mob1x (1).jpg 1x, 
-                        ./images/Carry-mob2x (1).jpg 2x" 
+                srcset="./images/Carry-mob1x.jpg 1x, 
+                        ./images/Carry-mob2x.jpg 2x" 
                 src="./images/carry.jpg"
                 alt="man with beard"
                 width="264"
@@ -173,8 +243,8 @@
               <img
                 class="photo-team"
 
-                srcset="./images/stas-mob-1x (1).jpg 1x,
-                ./images/stas-mob-2x (1).jpg 2x"
+                srcset="./images/stas-mob-1x.jpg 1x,
+                ./images/stas-mob-2x.jpg 2x"
                 src="./images/stas.jpg"
                 alt="man with smile"
                 width="264"
@@ -218,8 +288,8 @@
             <li class="team-list">
               <img
                 class="photo-team"
-                srcset="./images/liza-mob1x (1).jpg 1x,
-                        ./images/liza-mob2x (1).jpg 2x"
+                srcset="./images/liza-mob1x.jpg 1x,
+                        ./images/liza-mob2x.jpg 2x"
                 src="./images/liza.jpg"
                 alt="beatiful girl"
                 width="264"
@@ -263,8 +333,8 @@
             <li class="team-list">
               <img
                 class="photo-team"
-                srcset="./images/vodoprovod-mob1x (1).jpg 1x,
-                ./images/vodoprovod-mob2x (1).jpg 2x,"
+                srcset="./images/vodoprovod-mob1x.jpg 1x,
+                ./images/vodoprovod-mob2x.jpg 2x,"
                 src="./images/vodoprovod.jpg"
                 alt="cute boy"
                 width="264"
@@ -318,16 +388,16 @@
                 <picture>
 
                   <source srcset="./images/screen.jpg, 
-                  ./images/screen-desc-2x (1).jpg 2x " 
-                  media="(min-width:1158 px)"> 
+                  ./images/screen-desc-2x.jpg 2x " 
+                  media="(min-width:1158 px)"/> 
 
-                  <source srcset="./images/screen-tab-1x (1).jpg 1x, 
-                  ./images/screen-tab-2x (1).jpg 2x"
-                   media="(min-width:768 px)"> 
+                  <source srcset="./images/screen-tab-1x.jpg 1x, 
+                  ./images/screen-tab-2x.jpg 2x"
+                   media="(min-width:768 px)"/> 
 
-                  <source srcset="./images/screen-mob-1x (1).jpg 1x,
-                  ./images/screen-mob-2x (1).jpg 2x" 
-                  media="(max-width:767 px)"> 
+                  <source srcset="./images/screen-mob-1x.jpg 1x,
+                  ./images/screen-mob-2x.jpg 2x" 
+                  media="(max-width:767 px)"/> 
 
                 </picture>
                 <img
@@ -352,16 +422,16 @@
                 <picture>
 
                   <source srcset="./images/nfs.jpg 1x,
-                   ./images/nfc-desc-2x (1).jpg 2x" 
-                  media="(min-width:1158 px)"> 
+                   ./images/nfc-desc-2x.jpg 2x" 
+                  media="(min-width:1158 px)"/> 
 
-                  <source srcset="./images/nfc-tab-1x (1).jpg 1x, 
-                  ./images/nfc-tab-2x (1).jpg 2x"
-                   media="(min-width:768 px)"> 
+                  <source srcset="./images/nfc-tab-1x.jpg 1x, 
+                  ./images/nfc-tab-2x.jpg 2x"
+                   media="(min-width:768 px)"/> 
 
-                  <source srcset="./images/nfc-mob-1x (1).jpg 1x,
-                  ./images/nfc-mob-2x (1).jpg 2x" 
-                  media="(max-width:767 px)"> 
+                  <source srcset="./images/nfc-mob-1x.jpg 1x,
+                  ./images/nfc-mob-2x.jpg 2x" 
+                  media="(max-width:767 px)"/> 
                   
                 </picture>
                 <img
@@ -386,16 +456,16 @@
                 <picture>
 
                   <source srcset="./images/notebook.jpg 1x,
-                  ./images/notebook-desc-2x (1).jpg 2x" 
-                  media="(min-width:1158 px)"> 
+                  ./images/notebook-desc-2x.jpg 2x" 
+                  media="(min-width:1158 px)"/> 
 
-                  <source srcset="./images/notebook-tab-1x (1).jpg 1x, 
-                  ./images/notebook-tab-2x (1).jpg 2x"
-                   media="(min-width:768 px)"> 
+                  <source srcset="./images/notebook-tab-1x.jpg 1x, 
+                  ./images/notebook-tab-2x.jpg 2x"
+                   media="(min-width:768 px)"/> 
 
-                  <source srcset="./images/notebook-mob-1x (1).jpg 1x,
-                  ./images/notebook-mob-2x (1).jpg 2x" 
-                  media="(max-width:767 px)"> 
+                  <source srcset="./images/notebook-mob-1x.jpg 1x,
+                  ./images/notebook-mob-2x.jpg 2x" 
+                  media="(max-width:767 px)"/> 
                   
                 </picture>
                 <img
@@ -420,16 +490,16 @@
                 <picture>
 
                   <source srcset="./images/car.jpg 1x,
-                  ./images/car-desc-2x (1).jpg 2x" 
-                  media="(min-width:1158 px)"> 
+                  ./images/car-desc-2x.jpg 2x" 
+                  media="(min-width:1158 px)"/> 
 
-                  <source srcset="./images/car-tab-1x (1).jpg 1x, 
-                  ./images/car-tab-2x (1).jpg 2x"
-                   media="(min-width:768 px)"> 
+                  <source srcset="./images/car-tab-1x.jpg 1x, 
+                  ./images/car-tab-2x.jpg 2x"
+                   media="(min-width:768 px)"/> 
 
-                  <source srcset="./images/car-mob-1x (1).jpg 1x,
-                  ./images/car-mob-2x (1).jpg 2x" 
-                  media="(max-width:767 px)"> 
+                  <source srcset="./images/car-mob-1x.jpg 1x,
+                  ./images/car-mob-2x.jpg 2x" 
+                  media="(max-width:767 px)"/> 
                   
                 </picture>
                 <img
@@ -454,16 +524,16 @@
                 <picture>
 
                   <source srcset="./images/telephone.jpg 1x,
-                  ./images/telephone-desc-2x (1).jpg 2x" 
-                  media="(min-width:1158 px)"> 
+                  ./images/telephone-desc-2x.jpg 2x" 
+                  media="(min-width:1158 px)"/> 
 
-                  <source srcset="./images/telephone-tab-1x (1).jpg 1x, 
-                  ./images/telephone-tab-2x (1).jpg 2x"
-                   media="(min-width:768 px)"> 
+                  <source srcset="./images/telephone-tab-1x.jpg 1x, 
+                  ./images/telephone-tab-2x.jpg 2x"
+                   media="(min-width:768 px)"/> 
 
-                  <source srcset="./images/telephone-mob-1x (1).jpg 1x,
-                  ./images/telephone-mob-2x (1).jpg 2x" 
-                  media="(max-width:767 px)"> 
+                  <source srcset="./images/telephone-mob-1x.jpg 1x,
+                  ./images/telephone-mob-2x.jpg 2x" 
+                  media="(max-width:767 px)"/> 
                   
                 </picture>
                 <img
@@ -488,16 +558,17 @@
                 <picture>
 
                   <source srcset="./images/linda.jpg 1x,
-                  ./images/linda-desc-2x (1).jpg 2x" 
-                  media="(min-width:1158 px)"> 
+                  ./images/linda-desc-2x.jpg 2x"
+                   
+                  media="(min-width:1158 px)"/> 
 
-                  <source srcset="./images/linda-tab-1x (1).jpg 1x, 
-                  ./images/linda-tab-2x (1).jpg 2x"
-                   media="(min-width:768 px)"> 
+                  <source srcset="./images/linda-tab-1x.jpg 1x, 
+                  ./images/linda-tab-2x.jpg 2x"
+                   media="(min-width:768 px)"/> 
 
-                  <source srcset="./images/linda-mob-1x (1).jpg 1x,
-                  ./images/linda-mob-2x (1).jpg 2x" 
-                  media="(max-width:767 px)"> 
+                  <source srcset="./images/linda-mob-1x.jpg 1x,
+                  ./images/linda-mob-2x.jpg 2x" 
+                  media="(max-width:767 px)"/> 
                   
                 </picture>
                 <img
